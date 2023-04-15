@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 5em;
+}
+
+h1 {
+  font-size: 2.4em;
+  font-weight: normal;
+}
+
+#add-task {
+  display: flex;
+  width: 75%;
+  max-width: 45em;
+  margin-top: 2em;
+}
+
+#input-task {
+  flex: 1;
+  margin-left: 1.9em;
+  font-size: 1.2em;
+  border: none;
+  border-bottom: 3px solid #70587c;
+}
+
+#add-task-button {
+  padding: .7em .8em;
+  margin-left: .5em;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  background: #c7b8da;
+  border: none;
+}
+
+#task-list {
+  width: 75%;
+  max-width: 45em;
+  margin-top: 1em;
+  list-style: none;
+}
+
+#task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3em;
+}
+
+#task-list .checkbox {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+#task-list .task {
+  flex: 1;
+  margin-left: 1em;
+  font-size: 1.2em;
+}
+
+#task-list .task.done {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+#task-list .delete-btn {
+  width: 2em;
+  height: 2em;
+  margin-right: .3em;
+  color: white;
+  background: #f44336;
+  border: none;
+  border-radius: 50%;
+}
+
+#task-list .delete-btn::after {
+  position: relative;
+  font-size: x-large;
+  content: "\00d7";
+}
+
+@-moz-document url-prefix() {
+  #task-list .delete-btn::after {
+    top: -10%;
+  }
+}

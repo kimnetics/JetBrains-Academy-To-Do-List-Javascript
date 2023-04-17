@@ -14,7 +14,7 @@ It includes styling adjustments to support a consistent appearance for multiple 
 
 The web page has semantic elements defining its structure. The web page stores the task list in local storage to persist the list between sessions.
 
-Try the app out at [CodePen](https://codepen.io/kimnetics/pen/zYmBYbx).
+Try the application out at [CodePen](https://codepen.io/kimnetics/pen/zYmBYbx).
 
 ## Notes
 
